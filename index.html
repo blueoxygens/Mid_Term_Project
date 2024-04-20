@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+<div id ="root"></div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type ="text/babel">
+  const root = document.getElementById("root");
+  const title = <h3 id="title" onMouseEnter={() => console.log("mose enter")}>Hello React</h3>; //JSX 형식으로 작성한 코드 Babel로 변환이 필요함
+  const btn = <button id ="btn" onClick = {() => console.log("clicked")}>click me</button>; //JSX 형식으로 작성한 코드 Babel로 변환이 필요함
+  const container = React.createElement("div", null, [title, btn])
+  ReactDOM.render(container, root); //show it to the user
+
+  
+  /*const title = React.createElement("h2", {id: "react-span", style:{fontWeight:"bold"} }, "Hello React");
+  const btn = React.createElement("button", {
+    onClick: () => console.log("clicked"),
+  }, "click me");
+  //event listener 없이 on~로 이벤트 리스닝이 가능하다.
+  //container 생성. span, button 담는
+  const container = React.createElement("div", null, [title, btn])
+  ReactDOM.render(container, root); //show it to the user
+  //react에서 가장 어려운 방식. create element, reactDOM.render*/
+</script>
+</html>
