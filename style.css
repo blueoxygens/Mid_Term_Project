@@ -49,6 +49,10 @@ body{
   margin-top: -10px;
 }
 
+.logo img{
+  max-width: 40px;
+}
+
 ul.nav-links{
   margin: 0;
   float: right;
@@ -127,6 +131,9 @@ button:hover{
 @media screen and (max-width: 720px) {
   .logo{
     font-size: 22px;
+  }
+  .logo img{
+    max-width: 40px;
   }
   list.nav-link{
     font-size:13px;
