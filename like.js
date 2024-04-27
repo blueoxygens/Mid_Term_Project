@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
   const firebaseConfig = {
-    apiKey: "AIzaSyBgDBIeTYD9Gi3AjD7ZPXbC3spg3aMHqw8",
+    apiKey: "*",
     authDomain: "ossmidterm.firebaseapp.com",
     databaseURL: "https://ossmidterm-default-rtdb.firebaseio.com",
     projectId: "ossmidterm",
-    storageBucket: "ossmidterm.appspot.com",
-    messagingSenderId: "342870939179",
-    appId: "1:342870939179:web:e48cd427bb7de854b77c6e"
+    storageBucket: "*",
+    messagingSenderId: "*",
+    appId: "*"
   };
 
   firebase.initializeApp(firebaseConfig);
