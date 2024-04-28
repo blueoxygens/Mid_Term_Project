@@ -20,3 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const image1 = document.getElementById('img1');
+    const image2 = document.getElementById('img2');
+    
+    setInterval(function() {
+        if (image1.classList.contains('active')) {
+            image1.classList.remove('active');
+            image2.classList.add('active');
+        } else {
+            image1.classList.add('active');
+            image2.classList.remove('active');
+        }
+    }, 2000);
+});
