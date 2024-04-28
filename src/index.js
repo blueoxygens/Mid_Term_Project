@@ -9,28 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function navigateToPage(pageUrl) {
-      // Add leave animation to current page
       const currentPage = document.querySelector('.container');
       currentPage.classList.add('page-transition');
 
-      // Load new page after animation completes
       setTimeout(function() {
           window.location.href = pageUrl;
-      }, 500); // Change this delay to match the duration of your animation
+      }, 500);
   }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const image1 = document.getElementById('img1');
-    const image2 = document.getElementById('img2');
-    
-    setInterval(function() {
-        if (image1.classList.contains('active')) {
-            image1.classList.remove('active');
-            image2.classList.add('active');
-        } else {
-            image1.classList.add('active');
-            image2.classList.remove('active');
-        }
-    }, 2000);
 });
