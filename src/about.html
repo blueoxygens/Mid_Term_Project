@@ -44,27 +44,44 @@
             <input type="radio" name="slide" id="slide03">
             <div class="slidewrap">
               <ul class="slidelist">
-                <li>
+                <li class="slideitem">
                   <a>
                     <img src="./img/profile1.jpg">
                   </a>
                 </li>
-                <li>
+                <li class="slideitem">
                   <a>
                     <img src="./img/profile2.jpg">
                   </a>
                 </li>
+                <li class="slideitem">
+                  <a>
+                    <video src="./video/csstudent.mp4" autoplay muted loop></video>
+                  </a>
+                </li>
+
+                <div class="slide-control">
+                  <div>
+                    <label for="slide03" class="left"></label>
+                    <label for="slide02" class="right"></label>
+                  </div>
+                  <div>
+                    <label for="slide01" class="left"></label>
+                    <label for="slide03" class="right"></label>
+                  </div>
+                  <div>
+                    <label for="slide02" class="left"></label>
+                    <label for="slide01" class="right"></label>
+                  </div>
+                </div>
               </ul>
-          
-              <div class="slide-control">
-                <div class="control01">
-                  <label for="slide02" class="left"></label>
-                  <label for="slide02" class="right"></label>
-                </div>
-                <div class="control02">
-                  <label for="slide01" class="left"></label>
-                  <label for="slide01" class="right"></label>
-                </div>
+
+              <ul class="slide-pagelist">
+                <li><label for="slide01"></label></li>
+                <li><label for="slide02"></label></li>
+                <li><label for="slide03"></label></li>
+              </ul>
+              
               </div>
             </div>
           </div>
