@@ -185,6 +185,13 @@ button:hover{
   margin-top: 5vh;
 }
 
+.profile-wrapper video{
+  max-width: 500px;
+  border-radius: 20%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .profile-wrapper img{
   max-width: 500px;
   border-radius: 20%;
